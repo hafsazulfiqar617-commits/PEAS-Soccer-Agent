@@ -1,0 +1,32 @@
+class SoccerAgent:
+    def __init__(self):
+        self.performance = 0
+
+    def sense(self, ball_near, goal_visible, opponent_has_ball):
+        self.ball_near = ball_near
+        self.goal_visible = goal_visible
+        self.opponent_has_ball = opponent_has_ball
+
+    def act(self):
+        if self.ball_near and self.goal_visible:
+            self.performance += 10
+            return "Kick the ball towards goal"
+        elif self.ball_near:
+            self.performance += 5
+            return "Pass the ball to teammate"
+        elif self.opponent_has_ball:
+            return "Move to defend"
+        else:
+            return "Move towards ball"
+
+# Creating agent
+agent = SoccerAgent()
+
+# Simulating environment
+agent.sense(ball_near=True, goal_visible=True, opponent_has_ball=False)
+
+# Agent action
+action = agent.act()
+
+print("Agent Action:", action)
+print("Performance Score:", agent.performance)
