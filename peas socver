@@ -1,0 +1,65 @@
+   Description of PEAS
+
+**PEAS** is a framework used in Artificial Intelligence to describe the task environment of an intelligent agent. It helps in understanding **what an agent should do**, **where it works**, **how it acts**, and **what it can sense**.
+
+PEAS stands for:
+
+* **P – Performance Measure**
+* **E – Environment**
+* **A – Actuators**
+* **S – Sensors**
+
+The PEAS description is mainly used to design **rational agents** by clearly defining their goals and capabilities.
+
+ PEAS Description for Soccer Game Agent
+
+**Performance Measure**
+
+The performance measure defines how the success of the soccer agent is evaluated.
+For a soccer game agent, the performance is measured by:
+
+* Scoring maximum goals
+* Preventing goals by the opponent
+* Maintaining ball possession
+* Making accurate passes
+* Winning the match
+
+---
+
+### **Environment**
+
+The environment is the surroundings in which the agent operates.
+For a soccer agent, the environment includes:
+
+* Soccer field
+* Ball
+* Teammates
+* Opponents
+* Goal posts
+* Referee
+
+**Actuators**
+
+Actuators are the actions that the agent can perform to interact with the environment.
+The soccer agent uses actuators to:
+
+* Move forward and backward
+* Turn left or right
+* Kick the ball
+* Pass the ball
+* Defend against opponents
+
+Sensors**
+
+Sensors allow the agent to perceive information from the environment.
+The soccer agent uses sensors to detect:
+
+* Position of the ball
+* Position of teammates
+* Position of opponents
+* Location of goal post
+* Game status
+
+
+
+
